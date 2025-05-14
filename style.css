@@ -7,10 +7,14 @@ body {
   overflow: hidden;
 }
 
+#wish-box {
+  text-align: center;
+}
+
 #start-screen {
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
-  background-color: rgba(0,0,0,0.5);
+  background-color: rgba(0, 0, 0, 0.5);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -21,4 +25,84 @@ body {
   padding: 30px;
   border-radius: 15px;
   text-align: center;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+#slideshow, #videos, #final-message {
+  display: none;
+  text-align: center;
+  margin-top: 20px;
+}
+
+#slide-img {
+  max-width: 90%;
+  max-height: 70vh;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.nav-buttons {
+  margin-top: 20px;
+}
+
+.nav {
+  padding: 10px 20px;
+  margin: 0 10px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #ff4d6d;
+  border: none;
+  color: white;
+  border-radius: 10px;
+}
+
+video {
+  width: 90%;
+  max-width: 600px;
+  margin: 20px auto;
+  display: block;
+}
+
+#final-message {
+  text-align: center;
+}
+
+#final-message img {
+  max-width: 90%;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  color: #e60073;
+}
+
+.heart, .petal, .confetti {
+  position: fixed;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  pointer-events: none;
+  animation: fall 5s linear infinite;
+}
+
+.heart {
+  background: red;
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+
+.petal {
+  background: pink;
+  border-radius: 50%;
+}
+
+.confetti {
+  background: #f0f;
+}
+
+@keyframes fall {
+  to {
+    transform: translateY(100vh);
+    opacity: 0;
+  }
 }
