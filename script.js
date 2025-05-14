@@ -1,0 +1,1 @@
+// JavaScript logic from the original embedded code goes here

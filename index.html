@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Happy 24th Birthday</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <audio id="bg-music" loop>
+    <source src="assets/your-music.mp3" type="audio/mp3">
+  </audio>
+
+  <div id="hearts-container"></div>
+  <div id="petals-container"></div>
+  <div id="confetti-container"></div>
+
+  <div id="start-screen">
+    <div class="wish-box">
+      <h1>Happy 24th Birthday, My Love!</h1>
+      <p>Click below to relive our moments</p>
+      <button onclick="startShow()">Start</button>
+    </div>
+  </div>
+
+  <div id="slideshow">
+    <img id="slide-img" src="" alt="Memory Image">
+    <div class="nav-buttons">
+      <button class="nav" onclick="prevImage()">Prev</button>
+      <button class="nav" onclick="nextImage()">Next</button>
+    </div>
+  </div>
+
+  <div id="videos">
+    <video controls>
+      <source src="assets/video1.mp4" type="video/mp4">
+    </video>
+    <video controls>
+      <source src="assets/video2.mp4" type="video/mp4">
+    </video>
+    <button class="nav" onclick="showFinal()">Final Message</button>
+  </div>
+
+  <div id="final-message">
+    <img src="assets/final.jpg" alt="Final Picture" />
+    <h2>Thank you for all the memories. Here's to many more, my love.</h2>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
