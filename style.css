@@ -1,1 +1,24 @@
-/* CSS styles from the original embedded code go here */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background: url('assets/bg.jpg') no-repeat center center fixed;
+  background-size: cover;
+  overflow: hidden;
+}
+
+#start-screen {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wish-box {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  text-align: center;
+}
